@@ -18,3 +18,8 @@ C:\Users\Reg\Desktop\GameTracker\GameTracker\bin\Microsoft.CodeDom.Providers.Dot
 C:\Users\Reg\Desktop\GameTracker\GameTracker\obj\Debug\GameTracker.csprojResolveAssemblyReference.cache
 C:\Users\Reg\Desktop\GameTracker\GameTracker\obj\Debug\GameTracker.dll
 C:\Users\Reg\Desktop\GameTracker\GameTracker\obj\Debug\GameTracker.pdb
+C:\Users\Reg\Desktop\GameTracker\GameTracker\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\Reg\Desktop\GameTracker\GameTracker\bin\EntityFramework.dll
+C:\Users\Reg\Desktop\GameTracker\GameTracker\bin\EntityFramework.SqlServer.dll
+C:\Users\Reg\Desktop\GameTracker\GameTracker\bin\EntityFramework.xml
+C:\Users\Reg\Desktop\GameTracker\GameTracker\bin\EntityFramework.SqlServer.xml
