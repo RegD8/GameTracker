@@ -1,4 +1,11 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="GameTracker.Site" %>
+﻿<%--
+ //* Author: Reg Desgroseilliers
+ //* Student # 100160167
+ //* Date Modified:  June 8th, 2016
+ //* Version 1.0
+ //* Description: This is the site main master page. It contains a public navbar and footer.
+ //*/  --%>
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="GameTracker.Site" %>
 
 <!DOCTYPE html>
 

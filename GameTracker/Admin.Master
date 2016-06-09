@@ -1,4 +1,12 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="GameTracker.Admin" %>
+﻿<%--
+ //* Author: Reg Desgroseilliers
+ //* Student # 100160167
+ //* Date Modified:  June 8th, 2016
+ //* Version 1.0
+ //* Description: This master page is for the administrator area only
+ //*/  --%>
+
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="GameTracker.Admin" %>
 
 <!DOCTYPE html>
 
