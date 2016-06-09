@@ -117,23 +117,23 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Add Game.aspx" />
+    <Content Include="AddGame.aspx" />
     <Content Include="Dashboard.aspx" />
-    <Content Include="Edit Game.aspx" />
-    <Content Include="Edit User.aspx" />
+    <Content Include="EditGame.aspx" />
+    <Content Include="EditUser.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Register.aspx" />
-    <Content Include="View Games.aspx" />
+    <Content Include="ViewGames.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Add Game.aspx.cs">
-      <DependentUpon>Add Game.aspx</DependentUpon>
+    <Compile Include="AddGame.aspx.cs">
+      <DependentUpon>AddGame.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Add Game.aspx.designer.cs">
-      <DependentUpon>Add Game.aspx</DependentUpon>
+    <Compile Include="AddGame.aspx.designer.cs">
+      <DependentUpon>AddGame.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin.Master.cs">
       <DependentUpon>Admin.Master</DependentUpon>
@@ -149,19 +149,19 @@
     <Compile Include="Dashboard.aspx.designer.cs">
       <DependentUpon>Dashboard.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Edit Game.aspx.cs">
-      <DependentUpon>Edit Game.aspx</DependentUpon>
+    <Compile Include="EditGame.aspx.cs">
+      <DependentUpon>EditGame.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Edit Game.aspx.designer.cs">
-      <DependentUpon>Edit Game.aspx</DependentUpon>
+    <Compile Include="EditGame.aspx.designer.cs">
+      <DependentUpon>EditGame.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Edit User.aspx.cs">
-      <DependentUpon>Edit User.aspx</DependentUpon>
+    <Compile Include="EditUser.aspx.cs">
+      <DependentUpon>EditUser.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Edit User.aspx.designer.cs">
-      <DependentUpon>Edit User.aspx</DependentUpon>
+    <Compile Include="EditUser.aspx.designer.cs">
+      <DependentUpon>EditUser.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -192,12 +192,12 @@
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
-    <Compile Include="View Games.aspx.cs">
-      <DependentUpon>View Games.aspx</DependentUpon>
+    <Compile Include="ViewGames.aspx.cs">
+      <DependentUpon>ViewGames.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="View Games.aspx.designer.cs">
-      <DependentUpon>View Games.aspx</DependentUpon>
+    <Compile Include="ViewGames.aspx.designer.cs">
+      <DependentUpon>ViewGames.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
