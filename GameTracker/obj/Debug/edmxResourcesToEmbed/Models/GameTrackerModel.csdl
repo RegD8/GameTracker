@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GameTrackerModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="baseballgametracker">
+    <Key>
+      <PropertyRef Name="gameID" />
+    </Key>
+    <Property Name="gameID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="homeTeamName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="awayTeamName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="homeScore" Type="Int32" />
+    <Property Name="awayScore" Type="Int32" />
+    <Property Name="description" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="gameDate" Type="DateTime" Precision="0" />
+    <Property Name="spectators" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="DefaultContent" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="baseballgametrackers" EntityType="GameTrackerModel.baseballgametracker" />
+  </EntityContainer>
+</Schema>

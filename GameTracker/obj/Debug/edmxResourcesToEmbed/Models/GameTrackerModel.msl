@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="GameTrackerModelStoreContainer" CdmEntityContainer="DefaultContent">
+    <EntitySetMapping Name="baseballgametrackers">
+      <EntityTypeMapping TypeName="GameTrackerModel.baseballgametracker">
+        <MappingFragment StoreEntitySet="baseballgametracker">
+          <ScalarProperty Name="gameID" ColumnName="gameID" />
+          <ScalarProperty Name="homeTeamName" ColumnName="homeTeamName" />
+          <ScalarProperty Name="awayTeamName" ColumnName="awayTeamName" />
+          <ScalarProperty Name="homeScore" ColumnName="homeScore" />
+          <ScalarProperty Name="awayScore" ColumnName="awayScore" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="gameDate" ColumnName="gameDate" />
+          <ScalarProperty Name="spectators" ColumnName="spectators" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

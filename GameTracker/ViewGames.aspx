@@ -12,6 +12,30 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container">
-        <h1>View Games Page</h1>
+        <div class="row">
+            <div class="col-md-12"><h1>All Games</h1></div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 all-games-module">
+                <asp:GridView runat="server" ID="GamesGridView" AutoGenerateColumns="false" CssClass="table table-bordered table-striped"
+                    OnRowDeleting="GamesGridView_RowDeleting" DataKeyNames="gameID">
+                    <Columns>
+                        <asp:BoundField DataField="gameDate" Visible="true" HeaderText="Game Date" />
+                        <asp:BoundField DataField="homeTeamName"  Visible="true" ShowHeader="false"/>
+                        <asp:BoundField DataField="awayTeamName" Visible="true" ShowHeader="false" />
+                        <asp:BoundField HeaderText="Home Team Score" DataField="homeScore" Visible="true" />
+                        <asp:BoundField HeaderText="Away Team Score" DataField="awayScore" Visible="true" />
+                        <asp:BoundField DataField="description" HeaderText="Description" Visible="true" />
+                        <asp:BoundField DataField="spectators" HeaderText="Spectators" Visible="true" />
+                        <asp:HyperLinkField HeaderText="Edit" Text="<i class='fa fa-pencil-square-o fa-lg'></i> Edit" 
+                            NavigateUrl="~/SaveGame.aspx.cs" ControlStyle-CssClass="btn btn-primary btn-sm" runat="server"
+                            DataNavigateUrlFields="gameID" DataNavigateUrlFormatString="SaveGame.aspx?gameID={0}" />
+                        <asp:CommandField  HeaderText="Delete" DeleteText="<i class='fa fa-trash-o fa-lg'></i> Delete"
+                            ShowDeleteButton="true" ButtonType="Link" ControlStyle-CssClass="btn btn-danger btn-sm" />
+                      </Columns>
+                </asp:GridView>
+
+            </div>    
+        </div>
     </div>
 </asp:Content>

@@ -60,6 +60,8 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -87,6 +89,16 @@
     <Content Include="Content\styles.css" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Models\GameTrackerModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>GameTrackerModel.edmx</DependentUpon>
+      <LastGenOutput>GameTrackerModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\GameTrackerModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>GameTrackerModel.edmx</DependentUpon>
+      <LastGenOutput>GameTrackerModel.cs</LastGenOutput>
+    </Content>
     <Content Include="packages.config" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -103,6 +115,13 @@
     <Content Include="fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\fontawesome-webfont.ttf" />
     <Content Include="fonts\fontawesome-webfont.eot" />
+    <EntityDeploy Include="Models\GameTrackerModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>GameTrackerModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\GameTrackerModel.edmx.diagram">
+      <DependentUpon>GameTrackerModel.edmx</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-2.2.3.intellisense.js" />
     <Content Include="Scripts\jquery-2.2.3.js" />
     <Content Include="Scripts\jquery-2.2.3.min.js" />
@@ -117,7 +136,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AddGame.aspx" />
+    <Content Include="SaveGame.aspx" />
     <Content Include="Dashboard.aspx" />
     <Content Include="EditGame.aspx" />
     <Content Include="EditUser.aspx" />
@@ -125,15 +144,17 @@
     <Content Include="Login.aspx" />
     <Content Include="Register.aspx" />
     <Content Include="ViewGames.aspx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddGame.aspx.cs">
-      <DependentUpon>AddGame.aspx</DependentUpon>
+    <Compile Include="SaveGame.aspx.cs">
+      <DependentUpon>SaveGame.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AddGame.aspx.designer.cs">
-      <DependentUpon>AddGame.aspx</DependentUpon>
+    <Compile Include="SaveGame.aspx.designer.cs">
+      <DependentUpon>SaveGame.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin.Master.cs">
       <DependentUpon>Admin.Master</DependentUpon>
@@ -177,6 +198,24 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Models\baseballgametracker.cs">
+      <DependentUpon>GameTrackerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GameTrackerModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GameTrackerModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GameTrackerModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GameTrackerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GameTrackerModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GameTrackerModel.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Register.aspx.cs">
       <DependentUpon>Register.aspx</DependentUpon>
@@ -201,7 +240,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App_Code\" />
+    <Folder Include="App_Data\" />
     <Folder Include="Assets\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
