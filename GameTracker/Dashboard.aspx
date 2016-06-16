@@ -10,6 +10,19 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container">
+        <div class="row">
         <h1>User Dashboard</h1>
+
+            <div class="col-md-offset-3 col-md-2 dashboard-div">
+                <a href="edituser.aspx"><i class="fa fa-pencil-square-o fa-lg"> </i> Edit Profile</a>
+            </div>
+            <div class="col-md-2 dashboard-div">
+                <a href="SaveGame.aspx"><i class="fa fa-plus-square-o fa-lg"> Add Game</i></a>
+            </div>
+            <div class="col-md-2 dashboard-div">
+                <a href="ViewGames.aspx"><i class="fa fa-eye fa-lg"> View Games</i></a>
+            </div>
+
+        </div>
     </div>
 </asp:Content>

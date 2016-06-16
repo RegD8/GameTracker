@@ -13,16 +13,17 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container">
         <div class="row">
-            <div class="col-md-12"><h1>All Games</h1></div>
+            <div class="col-sm-12"><h1>All Games</h1></div>
         </div>
         <div class="row">
-            <div class="col-md-12 all-games-module">
-                <asp:GridView runat="server" ID="GamesGridView" AutoGenerateColumns="false" CssClass="table table-bordered table-striped"
-                    OnRowDeleting="GamesGridView_RowDeleting" DataKeyNames="gameID">
+            <div class="col-sm-12 all-games-module">
+                
+                <asp:GridView runat="server" ID="AllGamesGridView" AutoGenerateColumns="false" CssClass="table table-bordered table-striped"
+                    OnRowDeleting="GamesGridView_RowDeleting" DataKeyNames="gameID" >
                     <Columns>
-                        <asp:BoundField DataField="gameDate" Visible="true" HeaderText="Game Date" />
-                        <asp:BoundField DataField="homeTeamName"  Visible="true" ShowHeader="false"/>
-                        <asp:BoundField DataField="awayTeamName" Visible="true" ShowHeader="false" />
+                        <asp:BoundField DataField="gameDate" Visible="true" HeaderText="Game Date" DataFormatString="{0:MMM dd, yyyy}"/>
+                        <asp:BoundField DataField="homeTeamName"  Visible="true" HeaderText="Home Team"/>
+                        <asp:BoundField DataField="awayTeamName" Visible="true" ShowHeader="false" HeaderText="Away Team" />
                         <asp:BoundField HeaderText="Home Team Score" DataField="homeScore" Visible="true" />
                         <asp:BoundField HeaderText="Away Team Score" DataField="awayScore" Visible="true" />
                         <asp:BoundField DataField="description" HeaderText="Description" Visible="true" />

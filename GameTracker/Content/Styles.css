@@ -1,5 +1,17 @@
 ﻿body {
+    background: #45627f url(//cdn2.hubspot.net/hubfs/2107058/Images/always-grey.png?t=1465851206091) repeat;
 }
+
+.navbar-inverse {
+    background:#0f1b43;
+    border:none;
+    border-radius:0;
+}
+
+h1 {text-align:center;
+    color:#fff;
+}
+
 .footer {
     position: absolute;
     bottom: 0;
@@ -9,8 +21,188 @@
 }
 
 .game-module {
-    background-color:#d9d9d9;
+    background-color:#0f1b43;
     padding: 25px;
-    background-color: #d9d9d9;
     border: 1px solid #444444;
+    -webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+}
+
+#ContentPlaceHolder1_GamesGridView {
+    margin-bottom:0 !important;
+}
+
+#ContentPlaceHolder1_GamesGridView3 tbody tr td {
+    text-align:center;
+    font-size:16px;
+    background-color:#2c5c9a;
+    color:#fff;
+}
+
+/** team names */
+#ContentPlaceHolder1_GamesGridView1 tbody tr td {
+    font-size: 30px;
+    text-align: center;
+    width: 50%;
+    background-color:#fff;
+    border-left:1px solid #d9d9d9;
+}
+
+#ContentPlaceHolder1_GamesGridView tbody tr td {
+    
+    text-align: center;
+    width: 50%;
+    background-color:#fff;
+    border-left:1px solid #d9d9d9;
+}
+
+/** description */
+#ContentPlaceHolder1_GamesGridView2 tbody tr td {
+    background-color:#fff;
+}
+
+#ContentPlaceHolder1_GamesGridView4 tbody tr td  {
+    background-color:#fff;
+    text-align:center;
+    width:100%;
+    font-weight:700;
+    border:none;
+    
+}
+#ContentPlaceHolder1_GamesGridView4 tbody tr th {
+    background-color:#fff;
+    border:none;
+    width:99%;
+    text-decoration:underline;
+    
+}
+
+.dashboard-div {
+    text-align:center;
+    font-size: 15px;
+    background-color:rgba(255,255,255,0.8);
+    border:2px solid #0f1b43;
+    width:200px;
+    height:75px;
+    padding:25px; 
+}
+
+/* forms */
+.form-container {
+    background-color:rgba(255,255,255,0.8);
+    padding:25px;
+    border:2px solid #0f1b43;
+    border-radius:15px;
+}
+
+.form-container h1 {
+    color:#444444;
+}
+
+.all-games-module {
+    background-color:rgba(255,255,255,0.8);
+    padding:25px;
+    border:2px solid #0f1b43;
+    border-radius:15px;
+}
+
+.weekly-tracker {
+    margin-bottom:25px;
+}
+.game-module-new {
+    background-color:#fff;
+    padding: 20px;
+    border: 1px solid #fff;
+    -webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+    min-height:300px;
+    margin:0 10px;
+}
+
+.game-date,
+.description,
+.home-score,
+.away-score,
+.team-names,
+.spectators
+ {
+    margin-top:5px;
+    margin-bottom:5px;
+    background-color:#fff;
+}
+
+.game-date {
+    text-align:center;
+    font-size:18px;
+}
+
+.scores-container {width:100%; position:relative; }
+
+.home-score,
+.away-score {
+    width:20%;
+    float:left;
+    display:block;
+    text-align:center;
+    border:1px solid #d9d9d9;
+    height:50px;
+    font-size:28px;
+    line-height:50px;
+}
+
+.description {
+   height:220px;
+    width:100%;
+    display:block;
+    padding:10px;
+    padding-top:25px;
+}
+
+.description p {
+    margin-top:30px;
+    display:block;
+    width:100%;
+    padding-top:25px;
+}
+.home-team-name,
+.away-team-name {
+    background-color:#fff;
+    width:50%;
+    
+    display:block;
+}
+
+.team-names .vs{
+    
+}
+
+
+.spectators {
+    text-align:center;
+}
+
+.home-team-name {
+    width:50%;
+    float:left;
+    text-align:center;
+}
+
+.away-team-name {
+    width:50%;
+    float:right;
+    text-align:center;
+}
+
+.home-score {
+    position:absolute;
+    left:16%;
+    top:20px;
+}
+
+.away-score {
+    position:absolute;
+    right:16%;
+    top:20px;
 }

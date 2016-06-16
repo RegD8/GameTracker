@@ -16,8 +16,7 @@ namespace GameTracker
         {
             // if loading the page for the first time, populate the games grid
             if (!IsPostBack)
-            {
-                
+            {       
                 // Get the game data
                 this.GetGames();
             }
@@ -42,8 +41,8 @@ namespace GameTracker
                                 select allGames);
 
                 // bind the result to the GridView
-                GamesGridView.DataSource = Games.AsQueryable().ToList();
-                GamesGridView.DataBind();
+                AllGamesGridView.DataSource = Games.AsQueryable().ToList();
+                AllGamesGridView.DataBind();
             }
         }
 
@@ -63,7 +62,7 @@ namespace GameTracker
             int selectedRow = e.RowIndex;
 
             // get the selected gameID using the Grid's DataKey collection
-            int gameID = Convert.ToInt32(GamesGridView.DataKeys[selectedRow].Values["gameID"]);
+            int gameID = Convert.ToInt32(AllGamesGridView.DataKeys[selectedRow].Values["gameID"]);
 
             // use EF to find the selected student in the DB and remove it
             using (DefaultContent db = new DefaultContent())

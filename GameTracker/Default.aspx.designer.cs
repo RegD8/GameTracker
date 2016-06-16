@@ -13,6 +13,42 @@ namespace GameTracker {
     public partial class Home {
         
         /// <summary>
+        /// todaysDate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal todaysDate;
+        
+        /// <summary>
+        /// PreviousWeek control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button PreviousWeek;
+        
+        /// <summary>
+        /// NextWeek control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button NextWeek;
+        
+        /// <summary>
+        /// GamesGridView3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView GamesGridView3;
+        
+        /// <summary>
         /// GamesGridView control.
         /// </summary>
         /// <remarks>
@@ -38,5 +74,14 @@ namespace GameTracker {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView GamesGridView2;
+        
+        /// <summary>
+        /// GamesGridView4 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView GamesGridView4;
     }
 }

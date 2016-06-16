@@ -10,15 +10,6 @@
 namespace GameTracker {
     
     
-    public partial class View_Games {
-        
-        /// <summary>
-        /// AllGamesGridView control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView AllGamesGridView;
+    public partial class Test_Page {
     }
 }
