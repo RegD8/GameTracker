@@ -42,7 +42,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 
                 <ul class="nav navbar-nav navbar-right">
-                    <li id="home" runat="server"><a href="ViewGames.aspx">Login</a></li>
+                    <li id="home" runat="server"><a href="Login.aspx">Login</a></li>
                     <li id="about" runat="server"><a href="Register.aspx">Register</a></li>
                 </ul>
             </div>
