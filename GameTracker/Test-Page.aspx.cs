@@ -16,26 +16,53 @@ namespace GameTracker
     {
         //set up game array
         protected baseballgametracker[] gamesArray;
+        //set up date variable
+        protected DateTime dateRange;
+        protected int days = 0;
+        protected DateTime currentDate = DateTime.Today;
 
-        
         protected void Page_Load(object sender, EventArgs e)
+        {
+            //if page is being loaded for the first time
+            if (!IsPostBack)
+            {
+                //load todays date on page load
+                dateRange = currentDate;
+                //get the games
+                this.GetGames();
+            }
+        }
+
+        protected void GetGames()
         {
             //connect to the database
             using (DefaultContent db = new DefaultContent())
             {
-                //get todays date
-                DateTime dateRange = DateTime.Today;
                 //set up a query that selects only the proper date to load into the array
                 IQueryable<baseballgametracker> games = from allgames in db.baseballgametrackers
                                                         where allgames.gameDate < dateRange
                                                         select allgames;
 
                 //set up gamesarray to put data into
-                    gamesArray = games.ToArray();
+                gamesArray = games.ToArray();
 
-                }
+            }
+        }
 
-            
+        protected void PreviousWeek_Click(object sender, EventArgs e)
+        {
+            //take away 7 days from the date
+            days = (days - 7);
+            dateRange = currentDate.AddDays(days);
+            this.GetGames();
+        }
+
+        protected void NextWeek_Click(object sender, EventArgs e)
+        {
+            //add 7 days to the date
+            days = days + 7;
+            dateRange = currentDate.AddDays(days);
+            this.GetGames();
         }
     }
 }

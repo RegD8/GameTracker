@@ -4,6 +4,16 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <div class="container">
+        <div class="row weekly-tracker">
+            <div class="col-md-2">
+                <asp:Button Text="Last Week" ID="PreviousWeek" runat="server" OnClick="PreviousWeek_Click" />
+            </div>
+
+            <div class="col-md-8"><p>Week of: <%= dateRange %></p></div>
+            <div class="col-md-2">
+                <asp:Button Text="Next Week" ID="NextWeek" runat="server" OnClick="NextWeek_Click" />
+            </div>
+        </div>
         <div class="row">
             
 

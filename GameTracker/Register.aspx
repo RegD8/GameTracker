@@ -76,7 +76,7 @@
                             <label class="control-label" for="ConfirmPasswordTextBox">Confirm:</label>
 
                             <asp:TextBox runat="server" TextMode="Password" CssClass="form-control" ID="ConfirmPasswordTextBox" placeholder="Confirm Password" required="true" TabIndex="0"></asp:TextBox>
-
+                            
                             <asp:CompareValidator ErrorMessage="Your Passwords Must Match" Type="String" Operator="Equal"  ControlToValidate="ConfirmPasswordTextBox" runat="server"
 
                                 ControlToCompare="PasswordTextBox" CssClass="label label-danger" />

@@ -17,59 +17,28 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container">
-        <div class="row">
-            <div class="col-md-12"><h1>Baseball Game Tracker
-                 </h1><p><asp:Literal runat="server" id="todaysDate"></asp:Literal></p></div>
-        </div>
-        
         <div class="row weekly-tracker">
             <div class="col-md-2">
                 <asp:Button Text="Last Week" ID="PreviousWeek" runat="server" OnClick="PreviousWeek_Click" />
             </div>
 
-            <div class="col-md-8"></div>
+            <div class="col-md-8"><p>Week of: <%= dateRange %></p></div>
             <div class="col-md-2">
                 <asp:Button Text="Next Week" ID="NextWeek" runat="server" OnClick="NextWeek_Click" />
             </div>
         </div>
-
-        
         <div class="row">
-            <div class="col-md-3 game-module">
-                <asp:GridView runat="server" ID="GamesGridView3" AutoGenerateColumns="false" OnRowCreated="GamesGridView_RowCreated" CssClass="table table-bordered table-striped special-table" ShowHeader="false">
-                    <Columns>
-                        <asp:BoundField ItemStyle-CssClass="date-cell" DataField="gameDate"  Visible="true" DataFormatString="{0:MMM dd, yyyy}" />
-                    </Columns>      
-                </asp:GridView>
+            
 
-                <asp:GridView runat="server" ID="GamesGridView" AutoGenerateColumns="false" OnRowCreated="GamesGridView_RowCreated" CssClass="table table-bordered table-striped special-table" ShowHeader="false">
-                    <Columns>
-                        <asp:BoundField ItemStyle-CssClass="hidden-cell" DataField="homeTeamName"  Visible="true"/>
-                        <asp:BoundField DataField="awayTeamName" Visible="true" ShowHeader="false" />
-                    </Columns>      
-                </asp:GridView>
+         <% for (int i=0; i < gamesArray.Length; i++) { %> <!-- loop through the array -->
+         <div class="col-sm-3 game-module-new">
+             <div class="game-date"><%= gamesArray[i].gameDate.ToString() %></div><div class="spectators"><%= gamesArray[i].spectators %> Fans in attendence</div>
+             <div class="team-names"><div class="home-team-name"> <%= gamesArray[i].homeTeamName %></div> <div class="away-team-name"><%= gamesArray[i].awayTeamName %> </div></div>
+             <div class="scores-container"><div class="home-score"><%= gamesArray[i].homeScore %></div><div class="away-score"><%= gamesArray[i].awayScore %></div></div>
+             <div class="description"><p><%= gamesArray[i].description %></p></div>
+         </div>
+          <% } %> <!--End the for loop -->
 
-                <asp:GridView runat="server" ID="GamesGridView1"   AutoGenerateColumns="false" OnRowCreated="GamesGridView_RowCreated" CssClass="table table-bordered table-striped special-table" ShowHeader="false">
-                    <Columns>
-                    <asp:BoundField HeaderText="Final" DataField="homeScore" Visible="true" />
-
-                    <asp:BoundField HeaderText="Final" DataField="awayScore" Visible="true" />
-                    </Columns>
-                </asp:GridView> 
-                
-                <asp:GridView runat="server" ID="GamesGridView2"  AutoGenerateColumns="false"  OnRowCreated="GamesGridView_RowCreated" CssClass="table special-table" ShowHeader="false">
-                   <Columns>
-                        <asp:BoundField DataField="description" HeaderText="Description" Visible="true" />
-                      </Columns>
-                </asp:GridView>
-
-                <asp:GridView runat="server" ID="GamesGridView4"  AutoGenerateColumns="false"  OnRowCreated="GamesGridView_RowCreated" CssClass="table special-table">
-                   <Columns>
-                        <asp:BoundField DataField="spectators" HeaderText="# of Spectators" Visible="true" />
-                      </Columns>
-                </asp:GridView>
-
-            </div>    
         </div>
     </div>
 </asp:Content>
