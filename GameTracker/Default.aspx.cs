@@ -62,6 +62,8 @@ namespace GameTracker
             days = days + 7;
             dateRange = currentDate.AddDays(days);
             this.GetGames();
+
+            
         }
     }
 }
