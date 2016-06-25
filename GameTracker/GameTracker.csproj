@@ -180,11 +180,9 @@
   <ItemGroup>
     <Content Include="GameTracker\SaveGame.aspx" />
     <Content Include="GameTracker\Dashboard.aspx" />
-    <Content Include="GameTracker\EditUser.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Register.aspx" />
-    <Content Include="Test-Page.aspx" />
     <Content Include="GameTracker\ViewGames.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -218,13 +216,6 @@
     </Compile>
     <Compile Include="GameTracker\Dashboard.aspx.designer.cs">
       <DependentUpon>Dashboard.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="GameTracker\EditUser.aspx.cs">
-      <DependentUpon>EditUser.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="GameTracker\EditUser.aspx.designer.cs">
-      <DependentUpon>EditUser.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -274,13 +265,6 @@
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
     <Compile Include="Startup.cs" />
-    <Compile Include="Test-Page.aspx.cs">
-      <DependentUpon>Test-Page.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Test-Page.aspx.designer.cs">
-      <DependentUpon>Test-Page.aspx</DependentUpon>
-    </Compile>
     <Compile Include="GameTracker\ViewGames.aspx.cs">
       <DependentUpon>ViewGames.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

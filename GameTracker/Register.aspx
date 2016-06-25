@@ -1,9 +1,9 @@
 ﻿<%--
  //* Author: Reg Desgroseilliers
  //* Student # 100160167
- //* Date Modified:  June 8th, 2016
- //* Version 1.0
- //* Description: This page will contain a form that will ask the user to register for an account to access the dashboard
+ //* Date Modified:  June 24th, 2016
+ //* Version 1.3
+ //* Description: This page contains a form that will ask the user to register for an account to access the dashboard
  //*/  --%>
 
 <%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="GameTracker.Register" %>

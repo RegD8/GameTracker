@@ -18,7 +18,12 @@ namespace GameTracker
         {
 
         }
-
+        /**
+         * <summary>
+         * This method logs in the user onclick
+         * </summary>
+         * 
+         */
         protected void LoginButton_Click(object sender, EventArgs e)
         {
             // create new userStore and userManager objects

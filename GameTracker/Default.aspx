@@ -1,8 +1,8 @@
 ﻿<%--
  //* Author: Reg Desgroseilliers
  //* Student # 100160167
- //* Date Modified:  June 15th, 2016
- //* Version 1.2
+ //* Date Modified:  June 24th, 2016
+ //* Version 1.3
  //* Description: This is the main home page that will contain the game information for the selected week.
  //*/  --%>
 

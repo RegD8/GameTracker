@@ -1,8 +1,8 @@
 ﻿<%--
  //* Author: Reg Desgroseilliers
  //* Student # 100160167
- //* Date Modified:  June 8th, 2016
- //* Version 1.0
+ //* Date Modified:  June 24th, 2016
+ //* Version 1.3
  //* Description: This page is the administrator view of all of the entered games. From here an admin will be able to select the 
     game he/she wishes to edit or delete.
  //*/  --%>

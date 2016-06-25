@@ -44,7 +44,13 @@ namespace GameTracker
             }  
         }
 
-
+        /**
+         * <summary>
+         * This method saves a new game to the database, if a user is editing a game
+         * it allows them to edit a game from the database.
+         * </summary>
+         * 
+         */
         protected void SaveButton_Click(object sender, EventArgs e)
         {
             // Use EF to connect to the server

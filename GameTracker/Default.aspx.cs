@@ -40,7 +40,13 @@ namespace GameTracker
             }
             
         }
-
+        /**
+         * <summary>
+         * This method querys the database and gets the game info
+         * from the database and gets the games from the week
+         * </summary>
+         * 
+         */
         protected void GetGames()
         {
 
@@ -48,8 +54,6 @@ namespace GameTracker
             weekOfGame = GetFirstDayOfWeek(dateRange);
             //set the before date query
             DateTime before = weekOfGame.AddDays(7);
-            
-
 
             //connect to the database
             using (DefaultContent db = new DefaultContent())
@@ -68,6 +72,12 @@ namespace GameTracker
             }
         }
 
+        /**
+         * <summary>
+         * This method subtracts 7 days from the dateRange DateTime onclick
+         * </summary>
+         * 
+         */
         protected void PreviousWeek_Click(object sender, EventArgs e)
         {
             //take away 7 days from the date
@@ -77,7 +87,12 @@ namespace GameTracker
 
 
         }
-
+        /**
+         * <summary>
+         * This method returns the current date onclick
+         * </summary>
+         * 
+         */
         protected void CurrentWeek_Click(object sender, EventArgs e)
         {
             //get the current weeks games
@@ -86,7 +101,12 @@ namespace GameTracker
             
         }
 
-
+        /**
+         * <summary>
+         * This method adds 7 days to the dateRange DateTime onclick
+         * </summary>
+         * 
+         */
         protected void NextWeek_Click(object sender, EventArgs e)
         {
             //add 7 days to the date
@@ -96,34 +116,31 @@ namespace GameTracker
 
         }
 
-        protected int Next_Week()
-        {
-            this.days = days + 7;
-            return this.days;
-        }
-
-        /// <summary>
-        /// Returns the first day of the week that the specified
-        /// date is in using the current culture. 
-        /// </summary>
+        /**
+         * <summary>
+         * This method returns the first day of the week using the current culture
+         * </summary>
+         * 
+         */
         public static DateTime GetFirstDayOfWeek(DateTime dayInWeek)
         {
-            CultureInfo defaultCultureInfo = CultureInfo.CurrentCulture;
-            return GetFirstDayOfWeek(dayInWeek, defaultCultureInfo);
+            CultureInfo cultureInfo = CultureInfo.CurrentCulture;
+            return GetFirstDayOfWeek(dayInWeek, cultureInfo);
         }
 
-        /// <summary>
-        /// Returns the first day of the week that the specified date 
-        /// is in. 
-        /// </summary>
+        /**
+         * <summary>
+         * This method returns the first day of the week
+         * </summary>
+         */
         public static DateTime GetFirstDayOfWeek(DateTime dayInWeek, CultureInfo cultureInfo)
         {
             DayOfWeek firstDay = cultureInfo.DateTimeFormat.FirstDayOfWeek;
-            DateTime firstDayInWeek = dayInWeek.Date;
-            while (firstDayInWeek.DayOfWeek != firstDay)
-                firstDayInWeek = firstDayInWeek.AddDays(-1);
+            DateTime firstDayOfWeek = dayInWeek.Date;
+            while (firstDayOfWeek.DayOfWeek != firstDay)
+                firstDayOfWeek = firstDayOfWeek.AddDays(-1);
 
-            return firstDayInWeek;
+            return firstDayOfWeek;
         }
     }
 }

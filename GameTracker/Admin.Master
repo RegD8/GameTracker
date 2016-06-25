@@ -44,7 +44,6 @@
                 
                 <ul class="nav navbar-nav navbar-right">
                     <li id="dashboard" runat="server"><a href="/GameTracker/Dashboard.aspx">Dashboard</a></li>
-                    <li id="edituser" runat="server"><a href="/GameTracker/EditUser.aspx">Edit User</a></li>
                     <li id="addgame" runat="server"><a href="/GameTracker/SaveGame.aspx">Add Game</a></li>
                     <li id="viewgames" runat="server"><a href="/GameTracker/ViewGames.aspx">View Games</a></li>
                     <li id="logout" runat="server"><a href="/Logout.aspx">Logout</a></li>

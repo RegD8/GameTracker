@@ -19,11 +19,23 @@ namespace GameTracker
 
         }
 
+        /**
+         * <summary>
+         * This method redirects the user to the default page
+         * </summary>
+         * 
+         */
         protected void CancelButton_Click(object sender, EventArgs e)
         {
             Response.Redirect("Default.aspx");
         }
 
+        /**
+         * <summary>
+         * This method registers a user to the databse
+         * </summary>
+         * 
+         */
         protected void RegisterButton_Click(object sender, EventArgs e)
         {
             // create new userStore and userManager objects

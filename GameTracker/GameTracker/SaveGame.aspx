@@ -1,10 +1,10 @@
 ﻿<%--
  //* Author: Reg Desgroseilliers
  //* Student # 100160167
- //* Date Modified:  June 15th, 2016
- //* Version 1.2
- //* Description: This page will include a form that will allow a logged in user 
- //* to add games to the list.
+ //* Date Modified:  June 24th, 2016
+ //* Version 1.3
+ //* Description: This page includes a form that will allow a logged in user 
+ //* to add games to the list or edit games that have already been created
  //*/  --%>
 
 <%@ Page Title="" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="SaveGame.aspx.cs" Inherits="GameTracker.Add_Game" %>
