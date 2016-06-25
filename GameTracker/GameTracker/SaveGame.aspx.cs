@@ -75,7 +75,7 @@ namespace GameTracker
                 newGame.gameDate = Convert.ToDateTime(gameDateTextBox.Text);
                 newGame.spectators = spectators.Text;
                 
-                // use LINQ to ADO.NET to add / insert new student into the database
+                // use LINQ to ADO.NET to add / insert new game into the database
 
                 if (gameID == 0)
                 {
